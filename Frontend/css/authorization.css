@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext");
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url("../img/mainblock/authoBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+    /*background-size: 1519px 722px;*/
+    /*box-sizing: border-box;*/
+
+    position: absolute;
+    width: 1519px;
+    height: 722px;
+    left: 0px;
+    top: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header_title {
+    position: absolute;
+    width: 497px;
+    height: 98px;
+    left: 123px;
+    top: 54px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    /* or 150% */
+
+    color: #ffffff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
+}
+
+.invis_form {
+    position: absolute;
+    width: 300px;
+    height: 387px;
+    left: 1099px;
+    top: 252px;
+    /*274*/
+}
+
+.phone {
+    /*display: flex;*/
+    position: absolute;
+    width: 143px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+
+    color: #ffffff;
+}
+
+.password {
+    position: absolute;
+    width: 109px;
+    height: 32px;
+    left: 0px;
+    top: 147px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+
+    color: #ffffff;
+}
+
+.form_phone,
+.form_password {
+    /*display: flex;
+    flex-direction: row;
+    align-items: flex-start;*/
+    padding: 10px 25px;
+
+    display: block;
+    box-sizing: border-box;
+    /* width: 100%;*/
+
+    /*position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 993px;
+    top: 166px;*/
+
+    background: #ffffff;
+    border-radius: 8px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease-out;
+}
+
+.form_phone::-webkit-input-placeholder,
+.form_password::-webkit-input-placeholder {
+    /*opacity: 0.8;*/
+    color: rgb(161, 161, 161);
+}
+
+.form_phone:focus,
+.form_password:focus {
+    transition: transform 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+}
+
+.form_phone {
+    position: absolute;
+    width: 300px;
+    height: 72px;
+    left: 0px;
+    top: 75px;
+}
+
+.form_password {
+    position: absolute;
+    width: 300px;
+    height: 72px;
+    left: 0px;
+    top: 218px;
+    font-size: 60px;
+}
+
+.form_button {
+    /*display: inline-block;
+    padding: 12px 32px;*/
+    transition: all 0.3s ease-out;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    background-clip: border-box;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 60px;
+
+    padding: 20px 61px;
+    box-sizing: content-box;
+
+    position: absolute;
+    width: 97px;
+    height: 32px;
+    left: 34px;
+    top: 337px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.form_button:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(203, 203, 203) 0 0 16px 2px;
+}
+
+.form_text {
+    position: absolute;
+    width: 285px;
+    height: 60px;
+    left: 748px;
+    top: 589px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.header_icon {
+    position: absolute;
+    width: 247px;
+    height: 85px;
+    left: 123px;
+    top: 575px;
+    box-sizing: content-box;
+
+    background: #000000;
+    border-radius: 10px;
+}
+
+.icon_img {
+    position: absolute;
+    width: 61px;
+    height: 68px;
+    left: 27px;
+    top: 8px;
+}
+
+.icon_text {
+    position: absolute;
+    left: 102px;
+    top: 12px;
+    width: 129px;
+    height: 60px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
