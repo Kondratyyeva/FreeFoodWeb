@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Registration</title>
-        <link rel="stylesheet" href="css\registration.css" />
+<!--        <link rel="stylesheet" href="../css/registration.css" />-->
     </head>
     <body>
         <header class="header">
@@ -19,7 +19,7 @@
         <div class="green_form">
             <form class="form_registration">
                 <p class="phone">Телефон:</p>
-                <input
+                <input id="registration_phone_input"
                     class="form_phone"
                     type="tel"
                     class="form_input"
@@ -28,14 +28,14 @@
                 />
                 
                 <p class="password">Пароль:</p>
-                <input
+                <input id="registration_password_input"
                     class="form_password"
                     type="password"
                     maxlength="10"
                     class="form_input"
                     placeholder="********"
                 />
-                <button class="form_button" type="button">
+                <button id="registration_button" class="form_button" type="button">
                     Зарегистрироваться
                 </button>
                 <p class="form_text">
@@ -46,7 +46,7 @@
             </form>
         </div>
         <div class="header_icon">
-            <img class="icon_img" src="img\mainblock\shopping-bag.png" alt="img" />
+            <img class="icon_img" src="../resources/img/mainblock/shopping-bag.png" alt="img" />
             <a href="" class="icon_text">Free Food</a>
         </div>
     </body>
