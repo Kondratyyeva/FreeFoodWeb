@@ -1,0 +1,35 @@
+{
+  "name": "freefoodweb",
+  "version": "1.0.0",
+  "description": "web service for sharing food",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kondratyyeva/FreeFoodWeb.git"
+  },
+  "keywords": [
+    "js",
+    "web",
+    "html",
+    "food"
+  ],
+  "author": "spbstu.students",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kondratyyeva/FreeFoodWeb/issues"
+  },
+  "homepage": "https://github.com/Kondratyyeva/FreeFoodWeb#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-image: url("../img/mainblock/regBackground.png");
+    background-image: url("../resources/img/mainblock/regBackground.png");
     background-size: cover;
     background-repeat: no-repeat;
     /*background-position: center center;*/
