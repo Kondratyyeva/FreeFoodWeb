@@ -17,7 +17,14 @@
             </p>
         </header>
         <div class="green_form">
-            <form class="form_registration">
+            <form class="form_registration" id="form_registration">
+                <p class="email">Email:</p>
+                <input id="registration_email_input"
+                       class="form_email"
+                       class="form_input"
+                       maxlength="100"
+                />
+
                 <p class="phone">Телефон:</p>
                 <input id="registration_phone_input"
                     class="form_phone"
@@ -26,7 +33,7 @@
                     placeholder="+7(XXX)XXX XX XX"
                     maxlength="12" 
                 />
-                
+
                 <p class="password">Пароль:</p>
                 <input id="registration_password_input"
                     class="form_password"
@@ -35,7 +42,7 @@
                     class="form_input"
                     placeholder="********"
                 />
-                <button id="registration_button" class="form_button" type="button">
+                <button id="registration_button" class="form_button" type="submit">
                     Зарегистрироваться
                 </button>
                 <p class="form_text">

@@ -12,15 +12,16 @@
                 Рады видеть Вас снова
             </h1>
         </header>
-        <div class="invis_form">
+
+        <div class="invis_form" id="auth_form">
             <form class="form_registration">
-                <p class="phone">Телефон:</p>
+                <p class="phone">Email: </p>
                 <input
                     class="form_phone"
                     type="tel"
                     class="form_input"
-                    placeholder="+7(XXX)XXX XX XX"
-                    maxlength="12" 
+                    id="auth_email"
+                    maxlength="100"
                 />
                 
                 <p class="password">Пароль:</p>
@@ -30,12 +31,15 @@
                     maxlength="10"
                     class="form_input"
                     placeholder="********"
+                    id="auth_password"
                 />
-                <button class="form_button" type="button">
+
+                <button class="form_button" type="submit" id="auth_button">
                     Войти
                 </button>
             </form>
         </div>
+
         <p class="form_text">
             Нет аккаунта?<br />
             <a href="registration.html" class="underline">
