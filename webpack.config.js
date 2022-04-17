@@ -4,8 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
     entry: {
-        index: './src/js/main/app.js',
-        registration: './src/js/security/registration.js',
+        app: './src/js/main/app.js',
     },
     output: {
         filename: 'bundle.[chunkhash].js',
@@ -35,6 +34,14 @@ module.exports = {
             filename: "error.html",
             template: './src/html/error.html'
         }),
+        new HTMLPlugin({
+            filename: "main-catalog.html",
+            template: './src/html/main-catalog.html'
+        }),
+        new HTMLPlugin({
+            filename: "personal-account.html",
+            template: './src/html/personal-account.html'
+        }),
         new CleanWebpackPlugin()
     ],
     module: {
@@ -43,6 +50,17 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
+            // {
+            //     test: /\.(?:ico|gif|png|jpg|jpeg)$/,
+            //     loader: "file-loader",
+            //     options: {
+            //         name: "images/[name].[ext]"
+            //     }
+            // },
+            // {
+            //     test: /\.(?:ico|gif|png|jpg|jpeg)$/,
+            //     loader: 'url-loader'
+            // }
         ],
     },
 }

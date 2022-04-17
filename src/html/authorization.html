@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html>
+<!--<img src="/src/resources/img/mainblock/helpBackground.jpg">-->
     <head>
         <meta charset="utf-8" />
         <title>Authorization</title>
-<!--        <link rel="stylesheet" href="../css/authorization.css" />-->
+        <link rel="stylesheet" href="../css/authorization.css" />
     </head>
-    <body>
-        <header class="header">
-            <h1 class="header_title">
+
+    <body class="auth_body">
+        <header class="auth_header">
+            <h1 class="auth_header_title">
                 Добро пожаловать! <br />
                 Рады видеть Вас снова
             </h1>
         </header>
 
-        <div class="invis_form" id="auth_form">
-            <form class="form_registration">
-                <p class="phone">Email: </p>
+        <div class="auth_invis_form">
+            <form class="auth_form_registration" id="auth_form">
+                <p class="auth_phone">Email: </p>
                 <input
-                    class="form_phone"
+                    class="auth_form_phone"
                     type="tel"
-                    class="form_input"
+                    class="auth_form_input"
                     id="auth_email"
                     maxlength="100"
                 />
                 
-                <p class="password">Пароль:</p>
+                <p class="auth_password">Пароль:</p>
                 <input
-                    class="form_password"
+                    class="auth_form_password"
                     type="password"
                     maxlength="10"
-                    class="form_input"
+                    class="auth_form_input"
                     placeholder="********"
                     id="auth_password"
                 />
 
-                <button class="form_button" type="submit" id="auth_button">
+                <button class="auth_form_button" type="submit" id="auth_button">
                     Войти
                 </button>
             </form>
         </div>
 
-        <p class="form_text">
+        <p class="auth_form_text">
             Нет аккаунта?<br />
-            <a href="registration.html" class="underline">
+            <a href="registration.html" class="auth_underline">
                 Зарегистрироваться
             </a>
         </p>
-        <div class="header_icon">
-            <img class="icon_img" src="../resources/img/mainblock/shopping-bag.png" alt="img" />
-            <a href="" class="icon_text">Free Food</a>
+        <div class="auth_header_icon">
+<!--            <img class="auth_icon_img" src="../resources/img/mainblock/shopping-bag.png" alt="img" />-->
+            <div class="auth_icon_img"></div>
+            <a href="" class="auth_icon_text">Free Food</a>
         </div>
     </body>
 </html>
