@@ -30,6 +30,8 @@ h6 {
 }
 html,
 body {/* по умолчанию */
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
 	height: 100%;
 	line-height: 1;
 	/* background: #464646; */
@@ -126,6 +128,7 @@ body {/* по умолчанию */
 	font-size: 22px;
 	font-weight: 600;
 	margin-top: 16px;
+	margin-bottom: 27px;
 }
 
 .filter_container_underscore{
@@ -134,8 +137,269 @@ body {/* по умолчанию */
 .filter_container_categories_items{
 	font-size: 20px;
 	letter-spacing: 5px;
+
+}
+/*-------------------------------------------------------------------------------------------------------*/
+html,
+body {
+	height: 100%;
+}
+body {
+	display: grid;
+}
+.check {
+	cursor: pointer;
+	position: relative;
+	margin: auto;
+	width: 18px;
+	height: 18px;
+	-webkit-tap-highlight-color: transparent;
+	transform: translate3d(0, 0, 0);
+}
+.check:before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: rgba(34,50,84,0.03);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+.check svg {
+	position: relative;
+	z-index: 1;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #FFFFFFFF;
+	stroke-width: 1.5;
+	transform: translate3d(0, 0, 0);
+	transition: all 0.2s ease;
+}
+.check svg path {
+	stroke-dasharray: 60;
+	stroke-dashoffset: 0;
+}
+.check svg polyline {
+	stroke-dasharray: 22;
+	stroke-dashoffset: 66;
+}
+.check:hover:before {
+	opacity: 1;
+}
+.check:hover svg {
+	stroke: #ffffff;
+}
+#cbx:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+#cbx1:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx1:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx1:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
 }
 
+#cbx2:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx2:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx2:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx3:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx3:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx3:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx4:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx4:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx4:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx5:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx5:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx5:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx6:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx6:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx6:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx7:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx7:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx7:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx8:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx8:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx8:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx9:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx9:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx9:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx10:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx10:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx10:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx11:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx11:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx11:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx12:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx12:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx12:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx13:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx13:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx13:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx14:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx14:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx14:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx15:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx15:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx15:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+/*-------------------------------------------------------------------------------------------------------*/
 .categories_item1{
 	margin-top: 21px;
 }
