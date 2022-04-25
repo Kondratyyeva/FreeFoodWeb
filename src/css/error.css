@@ -26,7 +26,7 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
-	
+
 }
 html,
 body {/* по умолчанию */
@@ -58,12 +58,12 @@ body {/* по умолчанию */
 }
 /* ---------------------------------------------------------------------------- */
 .header{
-    position: absolute;
+	position: absolute;
 	width: 100%;
 	left: 0;
 	top: 0;
 	z-index: 50;
-    background: #464646;
+	background: #464646;
 }
 .header__container {
 	display: flex;
@@ -71,75 +71,76 @@ body {/* по умолчанию */
 	align-items: center;
 }
 .header__icon{
+	margin: 0px 0px 0px 120px;
 	height: 68px;
 	display: flex;
 }
 .header__logo {
-	margin: 0px 0px 0px 16px;
+	margin: 0px 0px 0px 24px;
 	font-weight: 600;
 	color: #FFFFFF;
 }
 .header__menu {
-	margin: 0px 0px 0px 490px;/* расстояние от лого до Home */
+	margin: 0px 0px 0px 820px;/* расстояние от лого до Home */
 }
 .header__menu__list {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 	color: #FFFFFF;
 }
 .list__item:not(:last-child) {
 	margin: 0px 49px 0px 0px;
 }
 .list__item_link {
-    color:#FFFFFF;
+	color:#FFFFFF;
 	font-weight: 600;
 	line-height: calc(64 / 20 * 100%);/* H/размер шрифта */
 }
 /* ---------------------------------------------------------------------------- */
 .text {
-    position: relative;
+	position: relative;
 }
 .text__container {
-    /* border: 1px solid black; */
-    padding: 230px 0px 106px 0px;
-    margin:0px 0px 0px 323px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-    max-width: 627px;
+	/* border: 1px solid black; */
+	padding: 230px 0px 106px 0px;
+	margin:0px auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 2;
+	max-width: 627px;
 	font-size: 60px;
 	font-weight: 700;
 	color: #FFFFFF;
 }
 .text__title {
-    /* border: 1px solid black; */
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+	/* border: 1px solid black; */
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
 }
 .text__title_item1 {
-    margin: auto;
-    /* border: 1px solid black; */
-    height: 61px;
-    line-height: 61px;
+	margin: auto;
+	/* border: 1px solid black; */
+	height: 61px;
+	line-height: 61px;
 }
 .text__title_item2 {
-    margin: auto;
-    /* border: 1px solid black; */
-    padding: 20px;
-    font-size: 40px;
+	margin: auto;
+	/* border: 1px solid black; */
+	padding: 20px;
+	font-size: 40px;
 }
 .text__direction {
-    /* border: 2px solid rgb(247, 15, 15); */
-    margin: 65px 0px 0px 0px;
-    display: flex;
-    flex-wrap: wrap;
+	/* border: 2px solid rgb(247, 15, 15); */
+	margin: 65px 0px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .text__dirextion_item {
-    padding: 53px 38px 53px 38px;
-    text-align: center;
-    border: 1px solid rgba(160,36,44,0.75);
+	padding: 53px 38px 53px 38px;
+	text-align: center;
+	border: 1px solid rgba(160,36,44,0.75);
 	background-color:rgba(160,36,44,0.75) ;
 	border-radius: 10px;
 	font-size: 32px;
@@ -147,7 +148,7 @@ body {/* по умолчанию */
 	color: #FFFFFF;
 }
 .text__background {
-    position: absolute;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;

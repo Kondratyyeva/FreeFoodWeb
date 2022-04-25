@@ -38,7 +38,7 @@ body {/* по умолчанию */
 	font-weight: 600;
 	font-family: Montserrat; /* шрифт по умолчанию */
 	/*background: #464646;*/
-	background-image: url("src/resources/img/mainblock/pattern-4232865.png") ;
+	background-image: url("../resources/img/mainblock/pattern-4232865.png") ;
 	background-size: cover;
 }
 .wrapper {
@@ -66,6 +66,7 @@ body {/* по умолчанию */
 	top: 0;
 	z-index: 50;
     background: #464646;
+	font-size: 25px;
 }
 .header__container {
 	display: flex;
@@ -83,7 +84,7 @@ body {/* по умолчанию */
 	color: #FFFFFF;
 }
 .header__menu {
-	margin: 0 0 0 463px;/* расстояние от лого до Home */
+	margin: 0 0 0 200px;/* расстояние от лого до Home */
 }
 .header__menu__list {
     display: flex;
@@ -100,119 +101,49 @@ body {/* по умолчанию */
 	/* line-height: calc(64 / 20 * 100%);/* H/размер шрифта */
 }
 /* ---------------------------------------------------------------------------- */
-.catalog_page {
+.filter {
 
     position: relative;
 }
-.catalog_page__container {
-	border: 1px solid darkred;
-	padding: 131px 0px 0px 0px;
-    margin:0px 0px 121px 0px;
+.filter_container {
+    margin:128px 0px 0px 121px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
-    /*max-width: 364px;*/
-	font-size: 40px;
+    max-width: 300px;
+	font-size: 24px;
 	font-weight: 700;
 	color: #FFFFFF;
 }
-.catalog_page__container_title {
-	margin-left: 741px;
-	position: relative;/*
-	border: 1px solid black;*/
-	display: flex;
-    flex-wrap: wrap;
-    /*margin: auto;*/
-}
-.catalog_page__user__container{
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	margin-top: 45px ;/*
-	border: 1px solid black;*/
-	min-width: 240px;/*
-	min-height: 900px;*/
-	margin-left:120px ;
-}
-.catalog_page_user_photo{
-	min-width: 240px;
-	min-height: 240px;
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	background-image: url('src/resources/img/mainblock/Rectangle 46.png') ;
-	background-size: cover;
 
+.filter_container_filters{
+	margin: 0 auto;
+	letter-spacing: 6px;
 }
-
-.catalog_page_user_data__list{/*
-	border: 1px solid black;*/
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	padding-top: 241px ;
-	font-size: 26px;
+.filter_container_categories{
+	letter-spacing: 6px;
+	font-size: 22px;
 	font-weight: 600;
+	margin-top: 16px;
 }
 
-.user_data__list_item{
-	margin-top: 26px;
-	font-family: Montserrat;
+.filter_container_underscore{
+	margin: 0 auto;
 }
-.catalog_page_user_buttons{
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	padding-top: 500px;
+.filter_container_categories_items{
 	font-size: 20px;
-	color: black;
-	font-weight: 600;
-	
+	letter-spacing: 5px;
 }
-.user_buttons_item1{
-	margin-top: 26px;
-	transition: all 0.3s ease-out;
-	border: none;
-	border-radius: 10px;
-	outline: none;
-	background-color:  #FFFFFF;
-	background-clip: border-box;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	width: 240px;
-	height: 85px;
+
+.categories_item1{
+	margin-top: 21px;
 }
-.user_buttons_item2{
-	margin-top: 129px;
-	transition: all 0.3s ease-out;
-	border: none;
-	border-radius: 10px;
-	outline: none;
-	background-color: #FFFFFF;
-	background-clip: border-box;
-	position: absolute;
-	align-items: center;
-	justify-content: center;/*
-	padding: 10px 34px;*/
-	width: 240px;
-	height: 85px;
+.categories_item2{
+	margin-top: 21px;
 }
-.user_buttons_item3{
-	margin-top: 237px;
-	transition: all 0.3s ease-out;
-	border: none;
-	border-radius: 10px;
-	outline: none;
-	background-color: #FFFFFF;
-	background-clip: border-box;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	width: 240px;
-	height: 85px;
-}
+
+
 .catalog_page_user_posts{/*
 	border: 1px solid black;*/
 	margin-left: 419px;
@@ -235,11 +166,11 @@ body {/* по умолчанию */
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	background-image: url('src/resources/img/mainblock/продукт.jpg') ;
+	background-image: url('../resources/img/mainblock/продукт.jpg') ;
 	background-size: cover;
 }
 .user_posts_item{
-	border: 1px solid black;
+	border: 1px solid white;
 	font-weight: 500;
 	font-size: 10px;
     color: black;

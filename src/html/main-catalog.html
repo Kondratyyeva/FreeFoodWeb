@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
-    <link rel="stylesheet" href="src/css/main-catalog.css">
+    <link rel="stylesheet" href="../css/main-catalog.css">
     <title>Main-Catalog</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="header">
         <div class="header__container">
             <div class="header__icon">
-                <img src="src/resources/img/mainblock/продукт.jpg" alt="cover">
+                <img src="../resources/img/mainblock/пакетлого.png" alt="cover">
             </div>
             <a href="index.html" class="header__logo">
                 Free Food
@@ -33,38 +33,30 @@
             </nav>
         </div>
     </div>
-    <div class="catalog_page">
-        <div class="catalog_page__container">
-            <div class="catalog_page__user__container catalog_page_user">
-                <div class="catalog_page_user_photo"></div>
-                <div class="catalog_page_user_data__list user_data__list">
-                    <p class="user_data__list_item">Катя</p>
-                    <p class="user_data__list_item">+7-911-614-23-22</p>
-                    <p class="user_data__list_item">email@mail.ru</p>
-                    <p class="user_data__list_item">ул. Харченко 16</p>
-                    <p class="user_data__list_item">Рейтинг: 78%</p>
-                </div>
-                <div class="catalog_page_user_buttons user_buttons btn">
-                    <button class="user_buttons_item1" type="button">Изменить личные данные</button>
-                    <button class="user_buttons_item2" type="button">Добавить объявление</button>
-                    <button class="user_buttons_item3" type="button">Выйти из профиля</button>
-                </div>
-            </div>
-            <p class="catalog_page__container_title">Мои объявления</p>
-
-
-        </div>
-        <div class="catalog_page_user_posts user_posts">
-            <div class="user_posts_item">
-                <div class="user_posts_item_photo"></div>
-                <p class="user_posts_item_name">Название</p>
-                <p class="user_posts_item_date">14.03.2013</p>
-            </div>
+    <div class="filter">
+        <div class="filter_container">
+            <p class="filter_container_filters">Фильтры</p>
+            <p class="filter_container_underscore">__________________________</p>
+            <p class="filter_container_categories">Категории:</p>
+            <p class="filter_container_categories_items categories_item">
+                <label class="categories_item1"><input type="checkbox" name="option1" value="a1"></label>Хлеб, выпечка<Br>
+                <label class="categories_item2"><input type="checkbox" name="option2" value="a2"></label>Овощи и фрукты<Br>
+                <label class="categories_item1"><input type="checkbox" name="option3" value="a3"></label>Молочные продукты<Br>
+                <label class="categories_item1"><input type="checkbox" name="option4" value="a4"></label>Крупы, макароны<Br>
+                <label class="categories_item1"><input type="checkbox" name="option5" value="a5"></label>Сухофрукты, орехи, семечки<Br>
+                <label class="categories_item1"><input type="checkbox" name="option6" value="a6"></label>Снеки<Br>
+                <label class="categories_item1"><input type="checkbox" name="option7" value="a7"></label>Полуфабрикаты<Br>
+                <label class="categories_item1"><input type="checkbox" name="option8" value="a8"></label>Консервация<Br>
+                <label class="categories_item1"><input type="checkbox" name="option9" value="a9"></label>Бакалея<Br>
+                <label class="categories_item1"><input type="checkbox" name="option10" value="a10"></label>Кондитерские изделия<Br>
+                <label class="categories_item1"><input type="checkbox" name="option11" value="a11"></label>Вода и напитки<Br>
+                <label class="categories_item1"><input type="checkbox" name="option12" value="a12"></label>Готовая еда</p>
+            <!--<p>&lt;!&ndash;<input type="submit" value="Отправить">&ndash;&gt;</p>-->
         </div>
     </div>
 </div>
-<!-- <div class="text__background _ibg">
-     <img src="pattern-4232865.png" alt="cover">
- </div>-->
+<div class="text__background _ibg">
+    <img src="src/resources/img/mainblock/pattern-4232865.png" alt="cover">
+</div>
 </body>
 </html>
