@@ -30,42 +30,47 @@ h6 {
 }
 html,
 body {/* по умолчанию */
-    height: 100%;
+/
+height: 100%;
     line-height: 1;
-    /* background: #464646; */
     font-size: 25px;
+    border: 1px black solid;
     color: #FFFFFF;/* цвет по умолчанию  */
     font-weight: 600;
-    font-family: Montserrat; /* шрифт по умолчанию */
-    /*background: #464646;*/
-    background-image: url("../resources/img/mainblock/pattern-4232865.png") ;
-    background-size: cover;
+    font-family: Montserrat;
+    height: 100%;
+    margin: auto;
+    overflow-x:hidden;
+
 }
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+
+    /*	min-height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;*/
+
 }
 ._ibg {
     position: relative;
 }
 ._ibg img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    display: flex;
     top: 0;
     left: 0;
-    object-fit: cover;
+    background-size: cover;
 }
 /* ---------------------------------------------------------------------------- */
 .header{
     position: absolute;
-    width: 100%;
+    width: 1519px;
     left: 0;
     top: 0;
     z-index: 50;
     background: #464646;
+    font-size: 25px;
+    font-family: Montserrat;
 }
 .header__container {
     display: flex;
@@ -73,7 +78,8 @@ body {/* по умолчанию */
     align-items: center;
 }
 .header__icon{
-    margin: 0 0 0 120px;
+    /*margin-left: 120px;*/
+    /*	margin: 0 0 0 120px;*/
     height: 68px;
     display: flex;
 }
@@ -83,7 +89,7 @@ body {/* по умолчанию */
     color: #FFFFFF;
 }
 .header__menu {
-    margin: 0 0 0 463px;/* расстояние от лого до Home */
+    margin: 0 0 0 285px;/* расстояние от лого до Home */
 }
 .header__menu__list {
     display: flex;
@@ -99,6 +105,7 @@ body {/* по умолчанию */
     font-weight: 600;
     /* line-height: calc(64 / 20 * 100%);/* H/размер шрифта */
 }
+/* ---------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- */
 .catalog_page {
 
