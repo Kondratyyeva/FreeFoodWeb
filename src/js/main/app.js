@@ -3,6 +3,9 @@ import '../../css/index.css'
 import '../../css/registration.css'
 import '../../css/error.css'
 import '../../css/help.css'
+import '../../css/main-catalog.css'
+import '../../css/personal-account.css'
+
 
 import {tryAuthorize, userExit} from "../security/auth";
 import {tryRegisterUser} from "../security/registration";
