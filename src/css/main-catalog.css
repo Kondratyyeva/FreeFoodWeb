@@ -81,6 +81,7 @@ body {/* по умолчанию */
 }
 .header__container {
 	display: flex;
+	top:0;
 	min-height: 80px;
 	align-items: center;
 }

@@ -5,7 +5,7 @@ import '../../css/error.css'
 import '../../css/help.css'
 import '../../css/main-catalog.css'
 import '../../css/personal-account.css'
-import ''
+import '../../css/favourite.css'
 
 import {tryAuthorize, userExit} from "../security/auth";
 import {tryRegisterUser} from "../security/registration";
@@ -26,6 +26,9 @@ function loadVariables() {
     }
     if(window.location.pathname === "/personal-account.html"){
         loadPersonalAccount()
+    }
+    if(window.location.pathname === "/favourite.html"){
+        loadFavourite()
     }
 }
 
@@ -74,5 +77,9 @@ function loadMainCatalog(){
 }
 
 function loadPersonalAccount(){
+
+}
+
+function loadFavourite(){
 
 }
