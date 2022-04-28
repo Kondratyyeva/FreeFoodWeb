@@ -203,58 +203,29 @@ body {/* по умолчанию */
 }
 .end__text__join {
 }
-.join {
-  margin: 106px 0px 127px 79px;
-  padding: 28px 50px;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  border: 1px solid #D28635;
-  background-color:#D28635 ;
-  border-radius: 10px;
-}
-.join_element {
-  font-size: 29px;
-  font-weight: 500;
-  line-height: calc(40 / 26 * 100%);
-}
-.form_button {
-/*
-  transition: all 0.3s ease-out;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 10px;
-  outline: none;
-  background-color: #D28635;
-  background-clip: border-box;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 60px;
-  padding: 10px 34px;
-  box-sizing: content-box;
-
-  position: absolute;*/
-  /*  width: 285px;
-   height: 60px;
-   left: 69px;
-   top: 438px; */
-  top:517px;
+.index_container_items_btn {
+  color: white;
+  margin: 0 auto;
+  margin-top: 106px;
   width: 355px;
-  margin-top:100px;
-  margin-left: 40px;/*
-  margin-left: 213px; */
-
-  align-items: center;
-  justify-content: center;
-  /* text-align: center; */
+  height: 78px;
+  font-family: Montserrat;
+  background-color: #D28635;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0px;
+  box-shadow: 0 0 5px #D28635;
+  -moz-box-shadow: 0 0 5px #D28635;
+  -ms-box-shadow: 0 0 5px #D28635;
+  -o-box-shadow: 0 0 5px #D28635;
+  -webkit-box-shadow: 0 0 5px #D28635;
 }
-
-/*
-.form_button:hover {
-  transition: all 0.3s ease-out;
-  transform: scale(1.02, 1.02);
-  box-shadow: rgba(203, 203, 203) 0 0 16px 2px;
-}*/
+.index_container_items_btn:hover {
+  box-shadow: 0 0 12px #D28635;
+  -moz-box-shadow: 0 0 12px #D28635;
+  -o-box-shadow: 0 0 12px #D28635;
+  -ms-box-shadow: 0 0 12px #D28635;
+  -webkit-box-shadow: 0 0 12px #D28635;
+}
