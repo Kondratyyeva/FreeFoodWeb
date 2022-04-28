@@ -42,6 +42,14 @@ body {/* по умолчанию */
 	overflow-x:hidden;
 
 }
+.main_body{
+	background-image: url("../resources/img/mainblock/MainBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/*background-size: 1519px 722px;*/
+	box-sizing: border-box;
+}
 .wrapper {
 
 /*	min-height: 100%;
@@ -80,7 +88,10 @@ body {/* по умолчанию */
 	/*margin-left: 120px;*/
 /*	margin: 0 0 0 120px;*/
 	height: 68px;
+	width: 61px;
 	display: flex;
+	background-image: url("../resources/img/mainblock/shopping-bag.png");
+	background-size: 100%;
 }
 .header__logo {
 	margin: 0 0 0 24px;

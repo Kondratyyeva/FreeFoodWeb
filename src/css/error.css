@@ -61,51 +61,6 @@ body {/* по умолчанию */
 	background-size: cover;
 }
 /* ---------------------------------------------------------------------------- */
-.header{
-	position: absolute;
-	width: 1519px;
-	left: 0;
-	top: 0;
-	z-index: 50;
-	background: #464646;
-	font-size: 25px;
-	font-family: Montserrat;
-}
-.header__container {
-	display: flex;
-	min-height: 80px;
-	align-items: center;
-}
-.header__icon{
-	/*margin-left: 120px;*/
-	/*	margin: 0 0 0 120px;*/
-	height: 68px;
-	display: flex;
-}
-.header__logo {
-	margin: 0 0 0 24px;
-	font-weight: 600;
-	color: #FFFFFF;
-}
-.header__menu {
-	margin: 0 0 0 285px;/* расстояние от лого до Home */
-}
-.header__menu__list {
-	display: flex;
-	flex-wrap: wrap;
-	color: #FFFFFF;
-}
-/* .list__item:not(:last-child) {
-	margin: 0px 63px 0px 0px;
-} */
-.list__item_link {
-	margin-left: 63px;
-	color:#FFFFFF;
-	font-weight: 600;
-	/* line-height: calc(64 / 20 * 100%);/* H/размер шрифта */
-}
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
 .text {
 	position: relative;
 }
