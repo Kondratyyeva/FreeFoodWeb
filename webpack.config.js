@@ -42,6 +42,10 @@ module.exports = {
             filename: "personal-account.html",
             template: './src/html/personal-account.html'
         }),
+        new HTMLPlugin({
+            filename: "favourite.html",
+            template: './src/html/favourite.html'
+        }),
         new CleanWebpackPlugin()
     ],
     module: {
