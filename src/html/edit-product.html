@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit product</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/edit-product.css">
+<!--    <link rel="stylesheet" href="../css/edit-product.css">-->
 </head>
 <body class="edit_product_body">
     <div class="header">
@@ -34,49 +34,62 @@
             <div class="product_photo"></div>
             <div class="product_photo_button">
                 <form class="product_photo_button_form" action="" method="GET">
-                    <input class ="product_photo_button_form_input" type="file"></input>
+                    <input class ="product_photo_button_form_input" type="file">Фото продуктов</input>
                 </form>
             </div>
         </div>
         <div class="data_editing">
-            <div class="product_data_forms">
+            <div class="product_data_forms" id="adding_new_product">
                 <form class="product_data_form" >
                     Название:
                     <input class="product_form_name"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="name"
                     />
                     <br>
                     Описание:
                     <input class="product_form_description"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="description"
+                    />
+                    <br>
+                    Категория:
+                    <input class="product_form_description"
+                           type="text"
+                           placeholder=""
+                           maxlength="50"
+                           id="category"
                     />
                     <br>
                     Статус:
                     <input class="product_form_status"
                         type="" 
                         placeholder="" 
-                        maxlength="30" 
+                        maxlength="30"
+                           id="status"
                     />
                     <br>
                     Адрес:
-                    <input class="product_form_adress"
+                    <input class="product_form_address"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="address"
                     />
                     Способ связи:
                     <input class="product_form_contact"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="communication_way"
                     />
                     <!--автозаполнение дожно быть в placeholderax-->
                     <br>
-                    <button class="pd_form_button_save" type="submit">
+                    <button class="pd_form_button_save" type="submit" id="submit_new_post_button">
                         Сохранить
                     </button>
                 </form>

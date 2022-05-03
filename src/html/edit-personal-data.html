@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit personal data</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/edit-personal-data.css">
+<!--    <link rel="stylesheet" href="../css/edit-personal-data.css">-->
 </head>
 <body class="edit_pd_body">
     <div class="header">
@@ -39,38 +39,34 @@
             </div>
         </div>
         <div class="data_editing">
-            <div class="personal_data_forms">
+            <div class="personal_data_forms" id="editUserForm">
                 <form class="user_data_form" >
                     Имя:
                     <input class="pd_form_username"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="username"
                     />
                     <br>
                     Телефон:
                     <input class="pd_form_phone"
                         type="tel"
                         placeholder="" 
-                        maxlength="12" 
-                    />
-                    <br>
-                    Почта:
-                    <input class="pd_form_email"
-                        type="email"
-                        placeholder="" 
-                        maxlength="30" 
+                        maxlength="12"
+                           id="phone"
                     />
                     <br>
                     Адрес:
                     <input class="pd_form_address"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="address"
                     />
                     <!--автозаполнение дожно быть в placeholderax-->
                     <br>
-                    <button class="pd_form_button_save" type="submit">
+                    <button class="pd_form_button_save" type="submit" id="submit_user_new_data">
                         Сохранить
                     </button>
                 </form>
