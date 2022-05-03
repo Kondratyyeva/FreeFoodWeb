@@ -131,7 +131,7 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    background-image: url('../resources/img/mainblock/продукт.jpg') ;
+    background-image: url('../resources/img/mainblock/product.jpg') ;
     background-size: cover;
 }
 .user_posts_item{

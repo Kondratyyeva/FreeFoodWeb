@@ -1,47 +1,3 @@
-/* Обнуление */
-*,
-*::before,
-*::after {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
-}
-a {
-	text-decoration: none;
-}
-ul,
-ol,
-li {
-	list-style: none;
-}
-img {
-	vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: inherit;
-	font-size: inherit;
-	
-}
-html,
-body {/* по умолчанию */
-	height: 100%;
-	line-height: 1;
-	font-size: 25px;
-	border: 1px black solid;
-	color: #FFFFFF;/* цвет по умолчанию  */
-	font-weight: 600;
-	font-family: Montserrat;
-	height: 100%;
-	margin: auto;
-	overflow-x:hidden;
-
-}
 .main_body{
 	background-image: url("../resources/img/mainblock/MainBackground.png");
 	background-size: cover;
@@ -51,13 +7,11 @@ body {/* по умолчанию */
 	box-sizing: border-box;
 }
 .wrapper {
-
 /*	min-height: 100%;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	position: absolute;*/
-
 }
 ._ibg {
 	position: relative;
@@ -100,16 +54,13 @@ body {/* по умолчанию */
 	color: #FFFFFF;
 }
 .header__menu {
-	margin: 0 0 0 285px;/* расстояние от лого до Home */
+	margin: 0 0 0 364px;/* расстояние от лого до Home */
 }
 .header__menu__list {
     display: flex;
     flex-wrap: wrap;
 	color: #FFFFFF;
 }
-/* .list__item:not(:last-child) {
-	margin: 0px 63px 0px 0px;
-} */
 .list__item_link {
 	margin-left: 63px;
     color:#FFFFFF;
@@ -145,12 +96,14 @@ body {/* по умолчанию */
 	font-weight: 600;
 	margin-top: 16px;
 	margin-bottom: 27px;
+	margin-left: 5px;
 }
 
 .filter_container_underscore{
 	margin: 0 auto;
 }
 .filter_container_categories_items{
+	margin-left: 5px;
 	font-size: 20px;
 	letter-spacing: 5px;
 
@@ -176,7 +129,7 @@ body {
 	content: "";
 	position: absolute;
 	top: -15px;
-	left: -15px;
+	/*left: -15px;*/
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
@@ -192,6 +145,7 @@ body {
 	stroke-linejoin: round;
 	stroke: #FFFFFFFF;
 	stroke-width: 1.5;
+	width: 20px;
 	transform: translate3d(0, 0, 0);
 	transition: all 0.2s ease;
 }
@@ -444,16 +398,16 @@ body {
 
 }
 .container_items_input{
-	width:650px;
+	width:734px;
 	height: 57px;
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
 }
 .container_items_btn {
-	margin-left: 5px;
-	margin-bottom: 2px;
-	align-content: center;
+	margin-left: 8px;
+	/*margin-bottom: 2px;*/
+	/*align-content: center;*/
 	width: 187px;
 	height: 57px;
 	font-family: Montserrat;
@@ -492,51 +446,47 @@ input[type=search]:focus{
 }
 /*
 --------------------------------------------------------------------*/
-.catalog {
+/*.catalog {
+	border: 5px solid darkblue;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 	z-index: 2;
 	height: 100%;
-}
+}*/
 .catalog_container{
-	border: 1px solid black;
 	margin:-550px 0px 0px 320px;
-	width: 100%;
+	width: 956px;
+	display: grid;
+	row-gap: 20px;
+	colomn-gap: 23px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .catalog_container_item{
-	border: 1px solid black;
 	width: 220px;
 	height: 251px;
 	background: white;
-	border: none;
 	border-radius: 10px;
-
 }
 .item_data{
 	font-size: 10px;
-/*	letter-spacing: 6px;*/
 	font-family: Montserrat;
 	font-weight: 500 ;
 	border: 1px solid white;
 	color: black;
 	width: 154px;
 	margin-left: 11px;
-	/*margin: 2px 0px 0px 11px;*/
 }
 .item_data_name{
-	/*border: 1px solid forestgreen;*/
 	margin: 200px 0px 0px 0px;
 }
 .item_data_date{
-	/*border: 1px solid yellow;*/
 }
 .item_data_favourite{
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	margin: -45px 0px 0px 165px;
-	/*border: 1px solid black;*/
 }
 .catalog_container_item_photo{
 	margin: 11px 0px 0px 11px;
@@ -545,241 +495,33 @@ input[type=search]:focus{
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	background-image: url('../resources/img/mainblock/продукт.jpg') ;
+	background-image: url('../resources/img/mainblock/product.jpg') ;
 	background-size: cover;
 	border-radius: 10px;
 	border: none;
 }
-
-body {
-	margin: 0;
-	padding: 0;
-	-webkit-font-smoothing: antialiased;
-	font-family: arial;
-}
-
-#main-content {
-	display: flex;
-	width: 100vw;
-	height: 100vh;
-	/*background: white;*/
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-
-}
-
-svg {
+.apply_container_items_btn {
+	margin-top: 22px;
+	margin-left: 20px ;
+	width: 187px;
+	height: 57px;
+	font-family: Montserrat;
+	background-color: #ffffff;
+	border-radius: 10px;
+	font-size: 24px;
+	font-weight: 600;
 	cursor: pointer;
-	overflow: visible;
-	width: 60px;
+	border: 0px;
+	box-shadow: 0 0 5px #FFFFFF;
+	-moz-box-shadow: 0 0 5px #FFFFFF;
+	-ms-box-shadow: 0 0 5px#FFFFFF;
+	-o-box-shadow: 0 0 5px #FFFFFF;
+	-webkit-box-shadow: 0 0 5px #FFFFFF;
 }
-svg #heart {
-	transform-origin: center;
-	animation: animateHeartOut 0.3s linear forwards;
-}
-svg #main-circ {
-	transform-origin: 29.5px 29.5px;
-}
-
-#checkbox2 {
-	display: none;
-}
-
-#checkbox2:checked + label svg #heart {
-	transform: scale(0.2);
-	fill: #e2264d;
-	animation: animateHeart 0.3s linear forwards 0.25s;
-}
-#checkbox2:checked + label svg #main-circ {
-	transition: all 2s;
-	animation: animateCircle 0.3s linear forwards;
-	opacity: 1;
-}
-#checkbox2:checked + label svg #grp1 {
-	opacity: 1;
-	transition: 0.1s all 0.3s;
-}
-#checkbox2:checked + label svg #grp1 #oval1 {
-	transform: scale(0) translate(0, -30px);
-	transform-origin: 0 0 0;
-	transition: 0.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp1 #oval2 {
-	transform: scale(0) translate(10px, -50px);
-	transform-origin: 0 0 0;
-	transition: 1.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp2 {
-	opacity: 1;
-	transition: 0.1s all 0.3s;
-}
-#checkbox2:checked + label svg #grp2 #oval1 {
-	transform: scale(0) translate(30px, -15px);
-	transform-origin: 0 0 0;
-	transition: 0.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp2 #oval2 {
-	transform: scale(0) translate(60px, -15px);
-	transform-origin: 0 0 0;
-	transition: 1.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp3 {
-	opacity: 1;
-	transition: 0.1s all 0.3s;
-}
-#checkbox2:checked + label svg #grp3 #oval1 {
-	transform: scale(0) translate(30px, 0px);
-	transform-origin: 0 0 0;
-	transition: 0.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp3 #oval2 {
-	transform: scale(0) translate(60px, 10px);
-	transform-origin: 0 0 0;
-	transition: 1.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp4 {
-	opacity: 1;
-	transition: 0.1s all 0.3s;
-}
-#checkbox2:checked + label svg #grp4 #oval1 {
-	transform: scale(0) translate(30px, 15px);
-	transform-origin: 0 0 0;
-	transition: 0.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp4 #oval2 {
-	transform: scale(0) translate(40px, 50px);
-	transform-origin: 0 0 0;
-	transition: 1.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp5 {
-	opacity: 1;
-	transition: 0.1s all 0.3s;
-}
-#checkbox2:checked + label svg #grp5 #oval1 {
-	transform: scale(0) translate(-10px, 20px);
-	transform-origin: 0 0 0;
-	transition: 0.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp5 #oval2 {
-	transform: scale(0) translate(-60px, 30px);
-	transform-origin: 0 0 0;
-	transition: 1.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp6 {
-	opacity: 1;
-	transition: 0.1s all 0.3s;
-}
-#checkbox2:checked + label svg #grp6 #oval1 {
-	transform: scale(0) translate(-30px, 0px);
-	transform-origin: 0 0 0;
-	transition: 0.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp6 #oval2 {
-	transform: scale(0) translate(-60px, -5px);
-	transform-origin: 0 0 0;
-	transition: 1.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp7 {
-	opacity: 1;
-	transition: 0.1s all 0.3s;
-}
-#checkbox2:checked + label svg #grp7 #oval1 {
-	transform: scale(0) translate(-30px, -15px);
-	transform-origin: 0 0 0;
-	transition: 0.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp7 #oval2 {
-	transform: scale(0) translate(-55px, -30px);
-	transform-origin: 0 0 0;
-	transition: 1.5s transform 0.3s;
-}
-#checkbox2:checked + label svg #grp2 {
-	opacity: 1;
-	transition: 0.1s opacity 0.3s;
-}
-#checkbox2:checked + label svg #grp3 {
-	opacity: 1;
-	transition: 0.1s opacity 0.3s;
-}
-#checkbox2:checked + label svg #grp4 {
-	opacity: 1;
-	transition: 0.1s opacity 0.3s;
-}
-#checkbox2:checked + label svg #grp5 {
-	opacity: 1;
-	transition: 0.1s opacity 0.3s;
-}
-#checkbox2:checked + label svg #grp6 {
-	opacity: 1;
-	transition: 0.1s opacity 0.3s;
-}
-#checkbox2:checked + label svg #grp7 {
-	opacity: 1;
-	transition: 0.1s opacity 0.3s;
-}
-
-@keyframes animateCircle {
-	40% {
-		transform: scale(10);
-		opacity: 1;
-		fill: #dd4688;
-	}
-	55% {
-		transform: scale(11);
-		opacity: 1;
-		fill: #d46abf;
-	}
-	65% {
-		transform: scale(12);
-		opacity: 1;
-		fill: #cc8ef5;
-	}
-	75% {
-		transform: scale(13);
-		opacity: 1;
-		fill: transparent;
-		stroke: #cc8ef5;
-		stroke-width: 0.5;
-	}
-	85% {
-		transform: scale(17);
-		opacity: 1;
-		fill: transparent;
-		stroke: #cc8ef5;
-		stroke-width: 0.2;
-	}
-	95% {
-		transform: scale(18);
-		opacity: 1;
-		fill: transparent;
-		stroke: #cc8ef5;
-		stroke-width: 0.1;
-	}
-	100% {
-		transform: scale(19);
-		opacity: 1;
-		fill: transparent;
-		stroke: #cc8ef5;
-		stroke-width: 0;
-	}
-}
-@keyframes animateHeart {
-	0% {
-		transform: scale(0.2);
-	}
-	40% {
-		transform: scale(1.2);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
-@keyframes animateHeartOut {
-	0% {
-		transform: scale(1.4);
-	}
-	100% {
-		transform: scale(1);
-	}
+.apply_container_items_btn:hover {
+	box-shadow: 0 0 12px #FFFFFF;
+	-moz-box-shadow: 0 0 12px #FFFFFF;
+	-o-box-shadow: 0 0 12px #FFFFFF;
+	-ms-box-shadow: 0 0 12px #FFFFFF;
+	-webkit-box-shadow: 0 0 12px #FFFFFF;
 }
