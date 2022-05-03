@@ -1,4 +1,5 @@
 import {getUserEmailCookie, saveOrUpdateUserData} from "../data/repo/security";
+import {saveUserImage} from "../data/repo/userRepo";
 
 export function editUserData(event){
     event.preventDefault()
@@ -15,7 +16,15 @@ export function userEditSubmit(event){
     let addressField = userDataForm.querySelector("#address")
     let usernameField = userDataForm.querySelector("#username")
 
+    let userImage = document.getElementById("user_profile_image_loader")
+    //console.log(userImage)
+    //console.log(userImage.files)
+    //console.log(userImage.files[0])
+
     //saving
+
+    saveUserImage(getUserEmailCookie(), userImage.files[0])
+
     saveOrUpdateUserData(
         getUserEmailCookie(),
         phoneField.value,
