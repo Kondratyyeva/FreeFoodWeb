@@ -6,6 +6,7 @@
     <title>Edit product</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
     <link rel="stylesheet" href="../css/edit-product.css">
+    <link rel="stylesheet" href="../css/edit-personal-data.css">
 </head>
 <body class="edit_product_body">
     <div class="header">
@@ -41,34 +42,35 @@
         <div class="data_editing">
             <div class="product_data_forms">
                 <form class="product_data_form" >
-                    Название:
+                    <p class ="product_data_form_item">Название:</p>
                     <input class="product_form_name"
                         type="text"
                         placeholder="" 
                         maxlength="50" 
                     />
                     <br>
-                    Описание:
-                    <input class="product_form_description"
+                    <p class ="product_data_form_item">Описание:</p>
+                    <textarea class="product_form_description"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
-                    />
+                        maxlength="100" 
+                    ></textarea>
                     <br>
-                    Статус:
-                    <input class="product_form_status"
-                        type="" 
-                        placeholder="" 
-                        maxlength="30" 
-                    />
+                    <p class ="product_data_form_item">Статус:</p>
+                    <select class="product_form_status", size="1">
+                        <option>Активно</option>
+                        <option>Заморожено</option>
+                        <option>Завершено</option>
+                    </select>
                     <br>
-                    Адрес:
+                    <p class ="product_data_form_item">Адрес:</p>
                     <input class="product_form_adress"
                         type="text"
                         placeholder="" 
                         maxlength="50" 
                     />
-                    Способ связи:
+                    <br>
+                    <p class ="product_data_form_item">Способ связи:</p>
                     <input class="product_form_contact"
                         type="text"
                         placeholder="" 
@@ -76,7 +78,7 @@
                     />
                     <!--автозаполнение дожно быть в placeholderax-->
                     <br>
-                    <button class="pd_form_button_save" type="submit">
+                    <button class="product_form_button_save" type="submit">
                         Сохранить
                     </button>
                 </form>

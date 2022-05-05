@@ -111,7 +111,9 @@ body {
 .user_photo {
     width: 480px;
     height: 480px;
+    background-size: cover;
     background-image: url(../resources/img/mainblock/no_avatar.webp);
+    border-radius: 10px;
 }
 /*
 .custom-file-input::-webkit-file-upload-button {

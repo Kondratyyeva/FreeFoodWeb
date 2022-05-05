@@ -1,0 +1,152 @@
+.edit_product_body {
+    background-image: url("../resources/img/mainblock/MainBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+}
+
+/*
+.header {
+    width: 100%;
+    top: 0;
+    z-index: 50;
+    background: #464646;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+.header__container {
+    display: flex;
+    margin-left: 8%;
+    top: 0;
+    min-height: 80px;
+    align-items: center;
+}
+.header__icon {
+    height: 68px;
+    width: 61px;
+    background-image: url("../resources/img/mainblock/shopping-bag.png");
+    background-size: 100%;
+}
+.header__logo {
+    margin: 0 0 0 24px;
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+}
+.header__menu {
+    margin: 0 0 0 285px; 
+}
+.header__menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.list__item_link {
+    margin-left: 63px;
+    color: #ffffff;
+    font-weight: 600;
+}
+*/
+
+/*-------------------------------------------------*/
+
+.edit_product_main_content {
+    display: flex;
+    margin-left: 8%;
+    top: 0;
+    align-items: center;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+
+.photo_editing {
+    margin-top: 50px;
+}
+
+.product_photo {
+    width: 480px;
+    height: 480px;
+    background-size: cover;
+    background-image: url(../resources/img/mainblock/no-product.png);
+    border-radius: 10px;
+}
+
+.product_photo_button_form {
+    margin-top: 20px;
+}
+.product_photo_button_form_input {
+    font-size: 25px;
+    font-family: Montserrat;
+}
+
+/*-------------------------------------------------*/
+
+.data_editing {
+    margin-left: auto; /*%*/
+    margin-right: 8%;
+    text-align: right;
+}
+
+.product_form_name,
+.product_form_description,
+.product_form_status,
+.product_form_adress,
+.product_form_contact {
+    width: 424px;
+    height: 39px;
+    font-size: 25px;
+    font-family: Montserrat;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+.product_form_description{
+    width: 424px;
+    height: 100px;
+}
+
+.product_data_form_item{
+    display: inline;
+    vertical-align: top;
+}
+
+.product_form_button_save{
+
+    transition: all 0.3s ease-out;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    background-clip: border-box;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 500;
+
+    padding: 8px 66px;
+    box-sizing: content-box;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: 75px;
+}
+
+.product_form_button_save:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+    box-shadow: rgb(195, 99, 147) 0 0 16px 2px;
+}
+
