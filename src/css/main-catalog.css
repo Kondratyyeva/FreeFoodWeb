@@ -1,0 +1,527 @@
+.main_body{
+	background-image: url("../resources/img/mainblock/MainBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/*background-size: 1519px 722px;*/
+	box-sizing: border-box;
+}
+.wrapper {
+/*	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: absolute;*/
+}
+._ibg {
+	position: relative;
+}
+._ibg img {
+	display: flex;
+	top: 0;
+	left: 0;
+	background-size: cover;
+}
+/* ---------------------------------------------------------------------------- */
+.header{
+    position: absolute;
+	width: 1519px;
+	left: 0;
+	top: 0;
+	z-index: 50;
+    background: #464646;
+	font-size: 25px;
+	font-family: Montserrat;
+}
+.header__container {
+	display: flex;
+	top:0;
+	min-height: 80px;
+	align-items: center;
+}
+.header__icon{
+	/*margin-left: 120px;*/
+/*	margin: 0 0 0 120px;*/
+	height: 68px;
+	width: 61px;
+	display: flex;
+	background-image: url("../resources/img/mainblock/shopping-bag.png");
+	background-size: 100%;
+}
+.header__logo {
+	margin: 0 0 0 24px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+.header__menu {
+	margin: 0 0 0 364px;/* расстояние от лого до Home */
+}
+.header__menu__list {
+    display: flex;
+    flex-wrap: wrap;
+	color: #FFFFFF;
+}
+.list__item_link {
+	margin-left: 63px;
+    color:#FFFFFF;
+	font-weight: 600;
+	/* line-height: calc(64 / 20 * 100%);/* H/размер шрифта */
+}
+/* ---------------------------------------------------------------------------- */
+.filter {
+	font-family: Montserrat;
+    position: relative;
+}
+.filter_container {
+	margin-top: -70px;
+	/*border: 1px black solid;*/
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    max-width: 300px;
+	height: 637px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+
+.filter_container_filters{
+	margin: 0 auto;
+	letter-spacing: 6px;
+}
+.filter_container_categories{
+	letter-spacing: 6px;
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 16px;
+	margin-bottom: 27px;
+	margin-left: 5px;
+}
+
+.filter_container_underscore{
+	margin: 0 auto;
+}
+.filter_container_categories_items{
+	margin-left: 5px;
+	font-size: 20px;
+	letter-spacing: 5px;
+
+}
+/*-------------------------------------------------------------------------------------------------------*/
+html,
+body {
+	height: 100%;
+}
+body {
+	display: grid;
+}
+.check {
+	cursor: pointer;
+	position: relative;
+	margin: auto;
+	width: 18px;
+	height: 18px;
+	-webkit-tap-highlight-color: transparent;
+	transform: translate3d(0, 0, 0);
+}
+.check:before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	/*left: -15px;*/
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: rgba(34,50,84,0.03);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+.check svg {
+	position: relative;
+	z-index: 1;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #FFFFFFFF;
+	stroke-width: 1.5;
+	width: 20px;
+	transform: translate3d(0, 0, 0);
+	transition: all 0.2s ease;
+}
+.check svg path {
+	stroke-dasharray: 60;
+	stroke-dashoffset: 0;
+}
+.check svg polyline {
+	stroke-dasharray: 22;
+	stroke-dashoffset: 66;
+}
+.check:hover:before {
+	opacity: 1;
+}
+.check:hover svg {
+	stroke: #ffffff;
+}
+#cbx:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+#cbx1:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx1:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx1:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx2:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx2:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx2:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx3:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx3:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx3:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx4:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx4:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx4:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx5:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx5:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx5:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx6:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx6:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx6:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx7:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx7:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx7:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx8:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx8:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx8:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx9:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx9:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx9:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx10:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx10:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx10:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx11:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx11:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx11:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx12:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx12:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx12:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx13:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx13:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx13:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx14:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx14:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx14:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+
+#cbx15:checked + .check svg {
+	stroke: #FFFFFFFF;
+}
+#cbx15:checked + .check svg path {
+	stroke-dashoffset: 60;
+	transition: all 0.3s linear;
+}
+#cbx15:checked + .check svg polyline {
+	stroke-dashoffset: 42;
+	transition: all 0.2s linear;
+	transition-delay: 0.15s;
+}
+.text__background {
+    position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+/*
+--------------------------------------------------------------------*/
+.search {
+	position: relative;
+}
+.search_container {
+	/*border: 1px solid black;*/
+	margin:128px 0px 0px 320px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 2;
+	min-width:953px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #FFFFFF;
+
+}
+.search_container_items{
+
+}
+.container_items_input{
+	width:734px;
+	height: 57px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+.container_items_btn {
+	margin-left: 8px;
+	/*margin-bottom: 2px;*/
+	/*align-content: center;*/
+	width: 187px;
+	height: 57px;
+	font-family: Montserrat;
+	background-color: #ffffff;
+	border-radius: 10px;
+	font-size: 24px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 0px;
+	box-shadow: 0 0 5px #FFFFFF;
+	-moz-box-shadow: 0 0 5px #FFFFFF;
+	-ms-box-shadow: 0 0 5px#FFFFFF;
+	-o-box-shadow: 0 0 5px #FFFFFF;
+	-webkit-box-shadow: 0 0 5px #FFFFFF;
+}
+.container_items_btn:hover {
+	box-shadow: 0 0 12px #FFFFFF;
+	-moz-box-shadow: 0 0 12px #FFFFFF;
+	-o-box-shadow: 0 0 12px #FFFFFF;
+	-ms-box-shadow: 0 0 12px #FFFFFF;
+	-webkit-box-shadow: 0 0 12px #FFFFFF;
+}
+input[type=search]{
+	border:2px solid #ffffff;
+	border-radius:4px;
+	margin:8px 0;
+	outline:none;
+	padding:8px;
+	box-sizing:border-box;
+	transition:.3s;
+}
+
+input[type=search]:focus{
+	border-color:white;
+	box-shadow:0 0 8px 0 white;
+}
+/*
+--------------------------------------------------------------------*/
+/*.catalog {
+	border: 5px solid darkblue;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 2;
+	height: 100%;
+}*/
+.catalog_container{
+	margin:-550px 0px 0px 320px;
+	width: 956px;
+	display: grid;
+	row-gap: 20px;
+	colomn-gap: 23px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.catalog_container_item{
+	width: 220px;
+	height: 251px;
+	background: white;
+	border-radius: 10px;
+}
+.item_data{
+	font-size: 10px;
+	font-family: Montserrat;
+	font-weight: 500 ;
+	border: 1px solid white;
+	color: black;
+	width: 154px;
+	margin-left: 11px;
+}
+.item_data_name{
+	margin: 200px 0px 0px 0px;
+}
+.item_data_date{
+}
+.item_data_favourite{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: -45px 0px 0px 165px;
+}
+.catalog_container_item_photo{
+	margin: 11px 0px 0px 11px;
+	min-width: 198px;
+	min-height: 180px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	background-image: url('../resources/img/mainblock/product.jpg') ;
+	background-size: cover;
+	border-radius: 10px;
+	border: none;
+}
+.apply_container_items_btn {
+	margin-top: 22px;
+	margin-left: 20px ;
+	width: 187px;
+	height: 57px;
+	font-family: Montserrat;
+	background-color: #ffffff;
+	border-radius: 10px;
+	font-size: 24px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 0px;
+	box-shadow: 0 0 5px #FFFFFF;
+	-moz-box-shadow: 0 0 5px #FFFFFF;
+	-ms-box-shadow: 0 0 5px#FFFFFF;
+	-o-box-shadow: 0 0 5px #FFFFFF;
+	-webkit-box-shadow: 0 0 5px #FFFFFF;
+}
+.apply_container_items_btn:hover {
+	box-shadow: 0 0 12px #FFFFFF;
+	-moz-box-shadow: 0 0 12px #FFFFFF;
+	-o-box-shadow: 0 0 12px #FFFFFF;
+	-ms-box-shadow: 0 0 12px #FFFFFF;
+	-webkit-box-shadow: 0 0 12px #FFFFFF;
+}

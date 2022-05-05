@@ -1,22 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>catalog</title>
-    <link rel="stylesheet" href="../css/authorization.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="../css/main-catalog.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
+    <title>Main-Catalog</title>
 </head>
-<body>
-<div class="logo"></div>
-<h1>Это каталог товаров</h1>
-<br>
-<a href="personal-account.html">Личный кабинет</a>
-<br>
-<form class="form_registration" id="exit_form">
+<body class="main_body">
+<div class="wrapper">
+    <div class="header">
+        <div class="header__container">
+            <div class="header__icon"></div>
+            <a href="index.html" class="header__logo">
+                Free Food
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu__list list">
+                    <li class="list__item ">
+                        <a href="favourite.html" class="list__item_link">Избранное</a>
+                    </li>
+                    <li class="list__item ">
+                        <a href="help.html" class="list__item_link">Помощь</a>
+                    </li>
+                    <li class="list__item ">
+                        <button type="submit" id="exit_button">Выход</button>
+                    </li>
+                    <li class="list__item ">
+                        <a href="personal-account.html" class="list__item_link">Личный кабинет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="search">
+        <div class="search_container">
+            <div class="search_container_items container_items">
+                <input class="container_items_input" type="search" id="search" name="search">
+                <button class="container_items_btn" type="button" onClick="registration.html">Поиск</button>
+            </div>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filter_container">
+            <p class="filter_container_filters">Фильтры</p>
+            <p class="filter_container_underscore">________________________</p>
+            <p class="filter_container_categories">Категории:</p>
+            <p class="filter_container_categories_items categories_item">
+                <input type="checkbox" id="cbx1" style="display: none;">
+                <label for="cbx1" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Хлеб, выпечка<Br><Br>
 
+                <input type="checkbox" id="cbx2" style="display: none;">
+                <label for="cbx2" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Овощи и фрукты<Br><Br>
 
-    <button class="form_button" type="submit" id="exit_button">
-        Выйти из аккаунта
-    </button>
-</form>
+                <input type="checkbox" id="cbx3" style="display: none;">
+                <label for="cbx3" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Молочные продукты<Br><Br>
+
+                <input type="checkbox" id="cbx4" style="display: none;">
+                <label for="cbx4" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Яйца<Br><Br>
+
+                <input type="checkbox" id="cbx5" style="display: none;">
+                <label for="cbx5" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Мясо и рыба<Br><Br>
+
+                <input type="checkbox" id="cbx6" style="display: none;">
+                <label for="cbx6" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Крупы, макароны<Br><Br>
+
+                <input type="checkbox" id="cbx7" style="display: none;">
+                <label for="cbx7" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Сухофрукты, орехи, семечки<Br><Br>
+
+                <input type="checkbox" id="cbx8" style="display: none;">
+                <label for="cbx8" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Снеки<Br><Br>
+
+                <input type="checkbox" id="cbx9" style="display: none;">
+                <label for="cbx9" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Полуфабрикаты<Br><Br>
+
+                <input type="checkbox" id="cbx11" style="display: none;">
+                <label for="cbx11" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Консервация<Br><Br>
+
+                <input type="checkbox" id="cbx12" style="display: none;">
+                <label for="cbx12" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Бакалея<Br><Br>
+
+                <input type="checkbox" id="cbx13" style="display: none;">
+                <label for="cbx13" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Кондитерские изделия<Br><Br>
+
+                <input type="checkbox" id="cbx14" style="display: none;">
+                <label for="cbx14" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Вода и напитки<Br><Br>
+                <input type="checkbox" id="cbx15" style="display: none;">
+                <label for="cbx15" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>Готовая еда<Br>
+                <button class="apply_container_items_btn " type="button" onClick="">Применить</button>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="catalog_container">
+           <div class="catalog_container_item">
+               <div class="catalog_container_item_photo"></div>
+               <div class="catalog_container_item_data item_data">
+                   <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                   <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+               </div>
+           </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+    </div>
+    <div class="text__background _ibg"></div>
+</div>
+</div>
 </body>
 </html>

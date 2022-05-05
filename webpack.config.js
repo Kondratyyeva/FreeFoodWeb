@@ -42,6 +42,18 @@ module.exports = {
             filename: "personal-account.html",
             template: './src/html/personal-account.html'
         }),
+        new HTMLPlugin({
+            filename: "favourite.html",
+            template: './src/html/favourite.html'
+        }),
+        new HTMLPlugin({
+            filename: "edit-personal-data.html",
+            template: './src/html/edit-personal-data.html'
+        }),
+        new HTMLPlugin({
+            filename: "edit-product.html",
+            template: './src/html/edit-product.html'
+        }),
         new CleanWebpackPlugin()
     ],
     module: {
@@ -50,6 +62,7 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
+
             // {
             //     test: /\.(?:ico|gif|png|jpg|jpeg)$/,
             //     loader: "file-loader",
@@ -63,4 +76,7 @@ module.exports = {
             // }
         ],
     },
+    performance: {
+        hints: false
+    }
 }

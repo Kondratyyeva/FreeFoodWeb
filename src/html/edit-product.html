@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit product</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+<!--    <link rel="stylesheet" href="../css/edit-product.css">-->
+</head>
+<body class="edit_product_body">
+    <div class="header">
+        <div class="header__container">
+            <div class="header__icon"></div>
+            <a href="index.html" class="header__logo">
+                Free Food
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu__list list">
+                    <li class="list__item ">
+                        <a href="favourite.html" class="list__item_link">Избранное</a>
+                    </li>
+                    <li class="list__item ">
+                        <a href="help.html" class="list__item_link">Помощь</a>
+                    </li>
+                    <li class="list__item ">
+                        <a href="personal-account.html" class="list__item_link">Личный кабинет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="edit_product_main_content">
+        <div class="photo_editing">
+            <div class="product_photo"></div>
+            <div class="product_photo_button">
+                <form class="product_photo_button_form" action="" method="GET">
+                    <input class ="product_photo_button_form_input" type="file">Фото продуктов</input>
+                </form>
+            </div>
+        </div>
+        <div class="data_editing">
+            <div class="product_data_forms" id="adding_new_product">
+                <form class="product_data_form" >
+                    Название:
+                    <input class="product_form_name"
+                        type="text"
+                        placeholder="" 
+                        maxlength="50"
+                           id="name"
+                    />
+                    <br>
+                    Описание:
+                    <input class="product_form_description"
+                        type="text"
+                        placeholder="" 
+                        maxlength="50"
+                           id="description"
+                    />
+                    <br>
+                    Категория:
+                    <input class="product_form_description"
+                           type="text"
+                           placeholder=""
+                           maxlength="50"
+                           id="category"
+                    />
+                    <br>
+                    Статус:
+                    <input class="product_form_status"
+                        type="" 
+                        placeholder="" 
+                        maxlength="30"
+                           id="status"
+                    />
+                    <br>
+                    Адрес:
+                    <input class="product_form_address"
+                        type="text"
+                        placeholder="" 
+                        maxlength="50"
+                           id="address"
+                    />
+                    Способ связи:
+                    <input class="product_form_contact"
+                        type="text"
+                        placeholder="" 
+                        maxlength="50"
+                           id="communication_way"
+                    />
+                    <!--автозаполнение дожно быть в placeholderax-->
+                    <br>
+                    <button class="pd_form_button_save" type="submit" id="submit_new_post_button">
+                        Сохранить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit personal data</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+<!--    <link rel="stylesheet" href="../css/edit-personal-data.css">-->
+</head>
+<body class="edit_pd_body">
+    <div class="header">
+        <div class="header__container">
+            <div class="header__icon"></div>
+            <a href="index.html" class="header__logo">
+                Free Food
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu__list list">
+                    <li class="list__item ">
+                        <a href="favourite.html" class="list__item_link">Избранное</a>
+                    </li>
+                    <li class="list__item ">
+                        <a href="help.html" class="list__item_link">Помощь</a>
+                    </li>
+                    <li class="list__item ">
+                        <a href="personal-account.html" class="list__item_link">Личный кабинет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="edit_pd_main_content">
+        <div class="photo_editing">
+            <div class="user_photo" id = "user_photo_editing_page"></div>
+            <div class="user_photo_button">
+                <form class="user_photo_button_form" action="" method="GET">
+                    <input class ="user_photo_button_form_input" type="file" id="user_profile_image_loader"></input>
+                </form>
+            </div>
+        </div>
+        <div class="data_editing">
+            <div class="personal_data_forms" id="editUserForm">
+                <form class="user_data_form" >
+                    Имя:
+                    <input class="pd_form_username"
+                        type="text"
+                        placeholder="" 
+                        maxlength="50"
+                           id="username"
+                    />
+                    <br>
+                    Телефон:
+                    <input class="pd_form_phone"
+                        type="tel"
+                        placeholder="" 
+                        maxlength="12"
+                           id="phone"
+                    />
+                    <br>
+                    Адрес:
+                    <input class="pd_form_address"
+                        type="text"
+                        placeholder="" 
+                        maxlength="50"
+                           id="address"
+                    />
+                    <!--автозаполнение дожно быть в placeholderax-->
+                    <br>
+                    <button class="pd_form_button_save" type="submit" id="submit_user_new_data">
+                        Сохранить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
