@@ -61,7 +61,7 @@
     font-family: Montserrat;
 }
 
-.photo_editing {
+.post_photo_editing {
     margin-top: 50px;
 }
 
@@ -91,6 +91,7 @@
 
 .product_form_name,
 .product_form_description,
+.product_form_category,
 .product_form_status,
 .product_form_adress,
 .product_form_contact {

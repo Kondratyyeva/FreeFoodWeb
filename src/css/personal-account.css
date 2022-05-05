@@ -3,7 +3,6 @@
 
 }
 .catalog_page__container {
-
     padding: 131px 0px 0px 0px;
     margin:0px 0px 121px 0px;
     display: flex;
@@ -17,19 +16,23 @@
     color: #FFFFFF;
 }
 .catalog_page__container_title {
-    margin: 0 auto;
-    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top:141px;
+    margin-left: 600px;
     display: flex;
     flex-wrap: wrap;
+    z-index: 2;
 }
 .catalog_page__user__container{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    margin-top: 41px ;
+    margin-top: 159px ;
     width: 240px;
 	min-height: 900px;
-    margin-left:120px ;
+    margin-left:5px ;
 }
 .catalog_page_user_photo{
     width: 240px;
@@ -64,7 +67,7 @@
     font-size: 20px;
     color: black;
     font-weight: 600;
-
+    margin-left: -10px;
 }
 .user_buttons_item1{
     margin-top: 26px;
@@ -109,44 +112,6 @@
     width: 240px;
     height: 85px;
 }
-.catalog_page_user_posts{/*
-	border: 1px solid black;*/
-    margin-left: 419px;
-    margin-right:120px;
-    margin-top: -68px;
-}
-.user_posts_item{
-    width: 220px;
-    height: 251px;
-    background: #FFFFFF;
-    border: none;
-    border-radius: 10px;
-    margin-left: 25px;
-}
-.user_posts_item_photo{
-    /*padding: 11px 0px 0px 11px;*/
-    margin: 11px 0px 0px 11px;
-    min-width: 198px;
-    min-height: 180px;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    background-image: url('../resources/img/mainblock/продукт.jpg') ;
-    background-size: cover;
-}
-.user_posts_item{
-    border: 1px solid white;
-    font-weight: 500;
-    font-size: 10px;
-    color: black;
-}
-.user_posts_item_name{
-    margin-top: 200px;
-}
-.text__background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+.personal_catalog_container{
+    margin-top: 51px;
 }

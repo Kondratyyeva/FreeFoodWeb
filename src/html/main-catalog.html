@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/main-catalog.css">
+    <!--<link rel="stylesheet" href="../css/main-catalog.css">-->
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
     <title>Main-Catalog</title>
 </head>
@@ -24,6 +24,9 @@
                     </li>
                     <li class="list__item ">
                         <a href="help.html" class="list__item_link">Помощь</a>
+                    </li>
+                    <li class="list__item ">
+                        <button type="submit" id="exit_button">Выход</button>
                     </li>
                     <li class="list__item ">
                         <a href="personal-account.html" class="list__item_link">Личный кабинет</a>
@@ -156,10 +159,10 @@
                         <polyline points="1 9 7 14 15 4"></polyline>
                     </svg>
                 </label>Готовая еда<Br>
-                <button class="container_items_btn" type="button" onClick="registration.html">Поиск</button>
+                <button class="apply_container_items_btn " type="button" onClick="">Применить</button>
         </div>
     </div>
-    <div class="catalog">
+    <div class="catalog" id="main_catalog">
         <div class="catalog_container">
            <div class="catalog_container_item">
                <div class="catalog_container_item_photo"></div>
@@ -167,54 +170,87 @@
                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
                </div>
-               <input type="checkbox" id="checkbox2" />
-               <label class="item_data_favourite" for="checkbox2">
-                   <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-                       <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-                           <path d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" id="heart" fill="#AAB8C2"/>
-                           <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
-
-                           <g id="grp7" opacity="0" transform="translate(7 6)">
-                               <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
-                               <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
-                           </g>
-
-                           <g id="grp6" opacity="0" transform="translate(0 28)">
-                               <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
-                               <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
-                           </g>
-
-                           <g id="grp3" opacity="0" transform="translate(52 28)">
-                               <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
-                               <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
-                           </g>
-
-                           <g id="grp2" opacity="0" transform="translate(44 6)">
-                               <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
-                               <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
-                           </g>
-
-                           <g id="grp5" opacity="0" transform="translate(14 50)">
-                               <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
-                               <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
-                           </g>
-
-                           <g id="grp4" opacity="0" transform="translate(35 50)">
-                               <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
-                               <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
-                           </g>
-
-                           <g id="grp1" opacity="0" transform="translate(24)">
-                               <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
-                               <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
-                           </g>
-                       </g>
-                   </svg>
-               </label>
            </div>
-        </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
+            <div class="catalog_container_item">
+                <div class="catalog_container_item_photo"></div>
+                <div class="catalog_container_item_data item_data">
+                    <div class="item_data_name">Название: текст в 2 строки максимум</div>
+                    <div class="item_data_date">Дата: 17.04.2022 в 16:25</div>
+                </div>
+            </div>
     </div>
     <div class="text__background _ibg"></div>
+</div>
 </div>
 </body>
 </html>

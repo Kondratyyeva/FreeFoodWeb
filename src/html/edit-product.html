@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="../css/edit-product.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit product</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/edit-product.css">
-    <link rel="stylesheet" href="../css/edit-personal-data.css">
+    <!--<link rel="stylesheet" href="../css/edit-product.css">-->
+    <!--<link rel="stylesheet" href="../css/edit-personal-data.css">-->
 </head>
 <body class="edit_product_body">
     <div class="header">
@@ -31,31 +32,54 @@
         </div>
     </div>
     <div class="edit_product_main_content">
-        <div class="photo_editing">
+        <div class="post_photo_editing">
             <div class="product_photo"></div>
             <div class="product_photo_button">
                 <form class="product_photo_button_form" action="" method="GET">
-                    <input class ="product_photo_button_form_input" type="file"></input>
+                    <input class ="product_photo_button_form_input" type="file" id ="new_post_photo_form"></input>
                 </form>
             </div>
         </div>
         <div class="data_editing">
-            <div class="product_data_forms">
+            <div class="product_data_forms" id="adding_new_product">
                 <form class="product_data_form" >
                     <p class ="product_data_form_item">Название:</p>
                     <input class="product_form_name"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                        id="name"
                     />
                     <br>
+
                     <p class ="product_data_form_item">Описание:</p>
                     <textarea class="product_form_description"
                         type="text"
                         placeholder="" 
                         maxlength="100" 
+                        id="description"
                     ></textarea>
                     <br>
+
+                    <p class ="product_data_form_item">Категория:</p>
+                    <select class="product_form_category", size="1", id="category">
+                        <option>Хлеб, выпечка</option>
+                        <option>Овощи и фрукты</option>
+                        <option>Молочные продукты</option>
+                        <option>Яйца</option>
+                        <option>Мясо и рыба</option>
+                        <option>Крупы, макароны</option>
+                        <option>Сухофрукты, орехи, семечки</option>
+                        <option>Снеки</option>
+                        <option>Полуфабрикаты</option>
+                        <option>Консервация</option>
+                        <option>Бакалея</option>
+                        <option>Кондитерские изделия</option>
+                        <option>Вода и напитки</option>
+                        <option>Готовая еда</option>
+                    </select>
+                    <br>
+
                     <p class ="product_data_form_item">Статус:</p>
                     <select class="product_form_status", size="1">
                         <option>Активно</option>
@@ -63,22 +87,27 @@
                         <option>Завершено</option>
                     </select>
                     <br>
+
                     <p class ="product_data_form_item">Адрес:</p>
                     <input class="product_form_adress"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="address"
                     />
                     <br>
+
                     <p class ="product_data_form_item">Способ связи:</p>
                     <input class="product_form_contact"
                         type="text"
                         placeholder="" 
-                        maxlength="50" 
+                        maxlength="50"
+                           id="communication_way"
                     />
+
                     <!--автозаполнение дожно быть в placeholderax-->
                     <br>
-                    <button class="product_form_button_save" type="submit">
+                    <button class="product_form_button_save" type="submit" id="submit_new_post_button">
                         Сохранить
                     </button>
                 </form>
