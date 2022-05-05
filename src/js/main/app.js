@@ -17,6 +17,7 @@ import {tryRegisterUser} from "../security/registration";
 import {addPost, submitNewPost} from "./postAdding";
 import {editUserData, userEditSubmit} from "./editUserData";
 import {showUserDataOnPersonalAccountPage} from "./functions";
+import {loadAllPostsOnMainPage, loadAllPostsOnPersonalPage} from "./postsLoading";
 
 console.log("App started")
 
@@ -99,6 +100,8 @@ export let exitButton
 function loadMainCatalog(){
     console.log("started loading main-catalog variables")
 
+    loadAllPostsOnMainPage()
+
     exitButton = document.getElementById("exit_button")
     exitButton.addEventListener('click', userExit)
 
@@ -112,6 +115,7 @@ function loadPersonalAccount(){
     console.log("started loading personal account variables")
 
     showUserDataOnPersonalAccountPage()
+    loadAllPostsOnPersonalPage()
 
     exitButton = document.getElementById("exit_button")
     exitButton.addEventListener('click', userExit)
@@ -130,11 +134,11 @@ function loadFavourite(){
 }
 
 export let submitNewPostButton
-export let newPostNameForm
-export let newPostDescriptionForm
-export let newPostCommunicationWayForm
-export let newPostStatusForm
-export let newPostCategoryForm
+// let newPostNameForm
+// let newPostDescriptionForm
+// let newPostCommunicationWayForm
+// let newPostStatusForm
+// let newPostCategoryForm
 
 function loadAddProduct(){
     console.log("started loading adding post variables")
@@ -144,13 +148,13 @@ function loadAddProduct(){
     submitNewPostButton =  document.getElementById("submit_new_post_button")
     submitNewPostButton.addEventListener('click', submitNewPost)
 
-    let addingForm = document.getElementById("adding_new_product")
-
-    newPostNameForm = addingForm.querySelector("#name")
-    newPostDescriptionForm = addingForm.querySelector("#description")
-    newPostCommunicationWayForm = addingForm.querySelector("#communication_way")
-    newPostStatusForm = addingForm.querySelector("#status")
-    newPostCategoryForm = addingForm.querySelector("#category")
+    // let addingForm = document.getElementById("adding_new_product")
+    //
+    // newPostNameForm = addingForm.querySelector("#name")
+    // newPostDescriptionForm = addingForm.querySelector("#description")
+    // newPostCommunicationWayForm = addingForm.querySelector("#communication_way")
+    // newPostStatusForm = addingForm.querySelector("#status")
+    // newPostCategoryForm = addingForm.querySelector("#category")
 
     console.log("ended loading adding post variables")
 }
