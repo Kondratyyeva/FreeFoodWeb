@@ -87,6 +87,7 @@ body {
     color: #ffffff;
 }
 
+
 .password {
     position: absolute;
     width: 109px;
@@ -227,9 +228,10 @@ body {
     left: 123px;
     top: 575px;
     box-sizing: content-box;
-
-    background: #000000;
+    /*max-height: 300px;*/
+    /*max-width: 300px;*/
     border-radius: 10px;
+    background: darkorange;
 }
 
 .icon_img {
@@ -238,6 +240,12 @@ body {
     height: 68px;
     left: 27px;
     top: 8px;
+    background: url(../resources/img/mainblock/shopping-bag.png);
+    background-blend-mode: multiply;
+    /*background-position: top;*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    /*background-color: rgba(255, 0, 0, 0.5);*/
 }
 
 .icon_text {

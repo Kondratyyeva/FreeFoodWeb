@@ -18,6 +18,7 @@ import {addPost, submitNewPost} from "./postAdding";
 import {editUserData, userEditSubmit} from "./editUserData";
 import {showUserDataOnPersonalAccountPage} from "./functions";
 import {loadAllPostsOnMainPage, loadAllPostsOnPersonalPage} from "./postsLoading";
+import {getUserEmailCookie} from "../data/repo/security";
 
 console.log("App started")
 
@@ -60,6 +61,15 @@ function loadVariables() {
     if(window.location.pathname === "/edit-product.html"){
         loadAddProduct()
     }
+    if(window.location.pathname === "/index.html"){
+        loadIndex()
+    }
+}
+
+function loadIndex(){
+    if(getUserEmailCookie() && getUserEmailCookie() !== '0'){
+        window.location.href = "main-catalog.html"
+    }
 }
 
 export let authForm
@@ -67,6 +77,9 @@ export let authEmail
 export let authPassword
 
 function loadAuth(){
+    if(getUserEmailCookie() && getUserEmailCookie() !== '0'){
+        window.location.href = "main-catalog.html"
+    }
     console.log("started loading auth variables")
 
     authForm = document.getElementById('auth_form')
@@ -84,6 +97,9 @@ export let registrationEmailInput
 export let registrationPasswordInput
 
 function loadRegistration(){
+    if(getUserEmailCookie() && getUserEmailCookie() !== '0'){
+        window.location.href = "main-catalog.html"
+    }
     console.log("started loading registration variables")
 
     registrationForm = document.getElementById('form_registration')
@@ -98,6 +114,9 @@ function loadRegistration(){
 export let exitButton
 
 function loadMainCatalog(){
+    if(!getUserEmailCookie() || getUserEmailCookie() === '0'){
+        window.location.href = "index.html"
+    }
     console.log("started loading main-catalog variables")
 
     loadAllPostsOnMainPage()
@@ -112,6 +131,9 @@ export let editAccountButton
 export let addPostButton
 
 function loadPersonalAccount(){
+    if(!getUserEmailCookie() || getUserEmailCookie() === '0'){
+        window.location.href = "index.html"
+    }
     console.log("started loading personal account variables")
 
     showUserDataOnPersonalAccountPage()
@@ -130,7 +152,10 @@ function loadPersonalAccount(){
 }
 
 function loadFavourite(){
-
+    if(!getUserEmailCookie() || getUserEmailCookie() === '0'){
+        window.location.href = "index.html"
+    }
+    showUserDataOnPersonalAccountPage()
 }
 
 export let submitNewPostButton
@@ -141,6 +166,9 @@ export let submitNewPostButton
 // let newPostCategoryForm
 
 function loadAddProduct(){
+    if(!getUserEmailCookie() || getUserEmailCookie() === '0'){
+        window.location.href = "index.html"
+    }
     console.log("started loading adding post variables")
 
     //forms + buttons
@@ -162,6 +190,9 @@ function loadAddProduct(){
 export let userEditSubmitButton
 
 function loadEditUserData(){
+    if(!getUserEmailCookie() || getUserEmailCookie() === '0'){
+        window.location.href = "index.html"
+    }
     console.log("started loading variables for editing user data")
 
     userEditSubmitButton = document.getElementById("submit_user_new_data")

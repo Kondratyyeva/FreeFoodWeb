@@ -27,9 +27,20 @@ export function submitNewPost(event) {
     newPostDescriptionForm = addingForm.querySelector("#description")
     newPostCommunicationWayForm = addingForm.querySelector("#communication_way")
     newPostStatusForm = addingForm.querySelector("#status")
-    newPostCategoryForm = addingForm.querySelector("#category")
+    newPostCategoryForm = document.getElementById("product_form_category")
     postAddress = addingForm.querySelector("#address")
     postPhotoForm = document.getElementById("new_post_photo_form")
+
+    //console.log(newPostCategoryForm.options[newPostCategoryForm.selectedIndex].value)
+
+    if(newPostNameForm.value.length == 0 ||
+        newPostDescriptionForm.value.length == 0 ||
+        postAddress.value.length == 0 ||
+        newPostCommunicationWayForm.value.length == 0 ||
+        postPhotoForm.files.length == 0){
+        window.alert("ЗАПОЛНИТЕ ВСЕ ПОЛЯ!")
+        return
+    }
 
     //saving post
 
@@ -37,13 +48,16 @@ export function submitNewPost(event) {
         getUserEmailCookie(),
         newPostNameForm.value,
         newPostDescriptionForm.value,
-        newPostStatusForm.value,
+        "active",
         postAddress.value,
         newPostCommunicationWayForm.value,
-        newPostCategoryForm.value,
+        newPostCategoryForm.options[newPostCategoryForm.selectedIndex].value,
         postPhotoForm.files[0]
     ).then( result => {
-        console.log("ended saving new post result: " + result)
+        console.log("ended saving new post result:")
+        console.log(result)
+        window.alert("Объявление сохранено!")
+        window.location.href = "personal-account.html"
     })
 
     //redirecting back

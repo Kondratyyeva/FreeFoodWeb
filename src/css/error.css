@@ -20,15 +20,7 @@ body {/* по умолчанию */
 	/*background-size: 1519px 722px;*/
 	box-sizing: border-box;
 }
-.wrapper {
 
-	/*	min-height: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        position: absolute;*/
-
-}
 ._ibg {
 	position: relative;
 }

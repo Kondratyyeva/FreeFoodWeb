@@ -43,6 +43,7 @@
         <div class="data_editing">
             <div class="product_data_forms" id="adding_new_product">
                 <form class="product_data_form" >
+                    <br><br>
                     <p class ="product_data_form_item">Название:</p>
                     <input class="product_form_name"
                         type="text"
@@ -62,31 +63,32 @@
                     <br>
 
                     <p class ="product_data_form_item">Категория:</p>
-                    <select class="product_form_category", size="1", id="category">
-                        <option>Хлеб, выпечка</option>
-                        <option>Овощи и фрукты</option>
-                        <option>Молочные продукты</option>
-                        <option>Яйца</option>
-                        <option>Мясо и рыба</option>
-                        <option>Крупы, макароны</option>
-                        <option>Сухофрукты, орехи, семечки</option>
-                        <option>Снеки</option>
-                        <option>Полуфабрикаты</option>
-                        <option>Консервация</option>
-                        <option>Бакалея</option>
-                        <option>Кондитерские изделия</option>
-                        <option>Вода и напитки</option>
-                        <option>Готовая еда</option>
+
+                    <select id="product_form_category" class="product_form_category" size="1">
+                        <option value="bread">Хлеб, выпечка</option>
+                        <option value="fruits">Овощи и фрукты</option>
+                        <option value="milk">Молочные продукты</option>
+                        <option value="eggs">Яйца</option>
+                        <option value="meat">Мясо и рыба</option>
+                        <option value="cereals">Крупы, макароны</option>
+                        <option value="nuts">Сухофрукты, орехи, семечки</option>
+                        <option value="snacks">Снеки</option>
+                        <option value="semi_finished">Полуфабрикаты</option>
+                        <option value="canned_food">Консервация</option>
+                        <option value="grocery">Бакалея</option>
+                        <option value="candy">Кондитерские изделия</option>
+                        <option value="water">Вода и напитки</option>
+                        <option value="food">Готовая еда</option>
                     </select>
                     <br>
 
-                    <p class ="product_data_form_item">Статус:</p>
-                    <select class="product_form_status", size="1">
-                        <option>Активно</option>
-                        <option>Заморожено</option>
-                        <option>Завершено</option>
-                    </select>
-                    <br>
+<!--                    <p class ="product_data_form_item">Статус:</p>-->
+<!--                    <select class="product_form_status", size="1">-->
+<!--                        <option>Активно</option>-->
+<!--                        <option>Заморожено</option>-->
+<!--                        <option>Завершено</option>-->
+<!--                    </select>-->
+<!--                    <br>-->
 
                     <p class ="product_data_form_item">Адрес:</p>
                     <input class="product_form_adress"

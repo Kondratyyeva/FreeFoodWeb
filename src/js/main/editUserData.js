@@ -23,6 +23,14 @@ export function userEditSubmit(event){
 
     //saving
 
+    if(phoneField.value.length == 0 ||
+        addressField.value.length == 0 ||
+        usernameField.value.length == 0 ||
+        userImage.files.length == 0){
+        window.alert("ЗАПОЛНИТЕ ВСЕ ПОЛЯ!")
+        return
+    }
+
     saveUserImage(getUserEmailCookie(), userImage.files[0])
 
     saveOrUpdateUserData(
@@ -33,6 +41,7 @@ export function userEditSubmit(event){
     ).then(r => {
         //redirecting back
         console.log("end editing user data")
+        window.alert("Данные успешно изменены!")
         window.location.href  = 'personal-account.html'
     })
 }

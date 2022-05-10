@@ -1,5 +1,6 @@
 import {getDownloadURL, ref, uploadBytes} from "firebase/storage";
 import {firebaseStorage} from "../../main/app";
+import {getUserDataByEmail} from "./security";
 
 export function saveNewPost(
     ownerEmail,
@@ -31,12 +32,15 @@ export function saveNewPost(
         }
     })
         .then(result => {
-            console.log("111")
             if('error' in result) return "couldn't upload new post"
-            console.log(result)
-            savePostImage(ownerEmail + "-" + postName, file)
+            return result.json()
+        })
+        .then(result => {
+            console.log("saved new post with id: " + result.name)
+            return savePostImage(result.name, file)
         })
 }
+
 
 export function getAllPosts(){
     console.log("getting all posts")
@@ -50,17 +54,46 @@ export function getAllPosts(){
                 ...response[key],
                 id: key
             })) : []
-            result.forEach(post => {
-                post["image"] = getPostImageURL(post.owner_email + "-" + post.post_name)
-            })
-            console.log(result)
             return result
         })
+        .then(posts => {
+            console.log("trying to set images for posts:")
+            console.log(posts)
+            return Promise.all(
+                posts.map(post => {
+                    return getPostImageURL(post.id)
+                        .then(url => {
+                            let res = post
+                            console.log("got url image for post: " + url)
+                            res["image"] = url
+                            return res
+                        })
+                })
+            ).then(res => {
+                console.log("ended setting image:")
+                console.log(res)
+                return res
+            })
+        })
+
+}
+
+export function deletePostById(postId){
+    console.log("trying deleting post with id" + postId)
+    return fetch('https://free-food-web-default-rtdb.firebaseio.com/posts/'+postId+".json", {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
 }
 
 export function getAllUsersPosts(email){
     return getAllPosts()
         .then(all => {
+            console.log(typeof all)
+            console.log(all)
+            console.log("GOT PROMISE ALL: " + all)
             let result = all.filter(post => {
                 return post.owner_email === email
             })
@@ -73,7 +106,7 @@ function savePostImage(postId, file){
         contentType: 'image/jpeg',
     };
     const storageRef = ref(firebaseStorage, `post/${postId}.jpg`);
-    uploadBytes(storageRef, file, metadata).then((snapshot) => {
+    return uploadBytes(storageRef, file, metadata).then((snapshot) => {
         console.log('Uploaded an image for post: ' + postId);
     });
 }

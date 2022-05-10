@@ -7,7 +7,7 @@ export function showUserDataOnPersonalAccountPage(){
     let phone = document.getElementById("user_phone")
     let email = document.getElementById("user_email")
     let address = document.getElementById("user_address")
-    let rate = document.getElementById("user_rate")
+    // let rate = document.getElementById("user_rate")
 
     let photo = document.getElementById("user_page_photo")
     getUserImageURL(getUserEmailCookie())
@@ -18,12 +18,13 @@ export function showUserDataOnPersonalAccountPage(){
 
     getUserDataByEmail(getUserEmailCookie())
         .then(userData => {
-            console.log("got user data: " + userData)
+            console.log("got user data: ")
+            console.log(userData)
             name.innerText = userData.username
             phone.innerText = userData.phone
             email.innerText = userData.email
             address.innerText = userData.address
-            rate.innerText = "rating undefined"
+            // rate.innerText = "rating undefined"
             console.log("ended changing user profile data")
         })
 }

@@ -19,14 +19,7 @@ body {/* по умолчанию */
 	background-position: center center;
 	box-sizing: border-box;
 }
-.wrapper {
-	/*	min-height: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        position: absolute;*/
 
-}
 /* ---------------------------------------------------------------------------- */
 .text {
 	position: relative;

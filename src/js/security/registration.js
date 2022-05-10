@@ -26,8 +26,8 @@ export function tryRegisterUser(event) {
             saveOrUpdateUserData(
                 email,
                 phone,
-                "null address",
-                "null username"
+                "Адрес не задан",
+                "Имя не задано"
             ).then(r => {})
         }
         else{
@@ -35,5 +35,6 @@ export function tryRegisterUser(event) {
         }
         window.alert(resultMessage)
         console.log("registration ended. Result = " + resultMessage)
+        window.location.href = "authorization.html"
     })
 }

@@ -40,9 +40,22 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    background-image: url('../resources/img/mainblock/Rectangle 46.png') ;
+    background-image: url(../resources/img/mainblock/no_avatar.webp) ;
     background-size: cover;
 
+}
+
+.delete_post_button{
+    border: none;
+    border-radius: 70px;
+    padding: 5px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background: deeppink;
+    margin-left: 55px;
+    visibility: visible
 }
 
 .catalog_page_user_data__list{/*

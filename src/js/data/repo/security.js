@@ -67,6 +67,8 @@ export function saveOrUpdateUserData(
                 address,
                 username
             }
+            console.log("Trying to save user data:")
+            console.log(userData)
             return fetch('https://free-food-web-default-rtdb.firebaseio.com/users.json', {
                 method: 'POST',
                 body: JSON.stringify(userData),
