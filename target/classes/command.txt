@@ -1,0 +1,8 @@
+set webhook:
+https://api.telegram.org./bot5177116768:AAHoIfSCYZ8z9tIgQPxoK1ty6P5izRqp4g4/getwebhookinfo
+
+get webhook info:
+https://api.telegram.org./bot5177116768:AAHoIfSCYZ8z9tIgQPxoK1ty6P5izRqp4g4/setwebhook?url=https://36e7-62-152-87-202.eu.ngrok.io
+
+token:
+5177116768:AAHoIfSCYZ8z9tIgQPxoK1ty6P5izRqp4g4
